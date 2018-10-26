@@ -320,3 +320,8 @@ h5 {
 .hiddenmultizwei {
   display: none;
 }
+
+
+.debug {
+  color: red;
+}

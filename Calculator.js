@@ -7,15 +7,18 @@ let sieben = document.getElementById("sieben");
 let neun = document.getElementById("neun");
 let multizwei = document.getElementById("multizwei");
 let multivier = document.getElementById("multivier");
+let minus = document.getElementById("minus");
+let plus = document.getElementById("plus");
+let debug = document.getElementById("debug");
 let points = 0;
 let anzahl = 0;
 
 let ergebnis = 18;
-
+let operation = 1;
 
 let clickeins = function(e) {
 
-points = points + 1;
+points = points + (1 * operation);
 anzahl = anzahl + 1;
 
   if(points == ergebnis) {
@@ -30,7 +33,7 @@ zaehler.innerHTML = anzahl;
 
 let clickzwei = function(e) {
 
-points = points + 2;
+points = points + (2 * operation);
 anzahl = anzahl + 1;
 
   if(points == ergebnis) {
@@ -45,7 +48,7 @@ zaehler.innerHTML = anzahl;
 
 let clickneun = function(e) {
 
-points = points + 9;
+points = points + (9 * operation);
 anzahl = anzahl + 1;
 
   if(points == ergebnis) {
@@ -60,7 +63,7 @@ zaehler.innerHTML = anzahl;
 
 let clicksieben = function(e) {
 
-points = points + 7;
+points = points + (7 * operation);
 anzahl = anzahl + 1;
 
   if(points == ergebnis) {
@@ -109,6 +112,23 @@ counter.innerHTML = points;
 zaehler.innerHTML = anzahl;
 }
 
+
+
+
+let clickPlus = function(e) {
+  operation = 1;
+  debug.innerHTML = operation;
+
+}
+
+
+let clickMinus = function(e) {
+  operation = -1;
+  debug.innerHTML = operation;
+}
+
+plus.addEventListener("click", clickPlus);
+minus.addEventListener("click", clickMinus);
 
 
 eins.addEventListener("click", clickeins);
