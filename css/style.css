@@ -69,6 +69,23 @@ h5 {
 
 }
 
+/*Nicole anfang*/
+h6 {
+  font-size: 1rem;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 600;
+  line-height: 1rem;
+  color: #ffde44;
+  text-align: left;
+}
+
+a {
+  text-decoration: none;
+  color: #ffde44;
+}
+/*Nicole ende*/
+
+
 .typowelldone {
 
   color: #ffde44;
@@ -213,6 +230,24 @@ h5 {
 
 }
 
+/*Nicole anfang*/
+#overlay {
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0; 
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+  z-index: 1000000; 
+}
+
+#overlay.show{
+  display: inline-block;
+}
+/*Nicole ende*/
 
 .container {
   display: grid;
@@ -374,6 +409,42 @@ h5 {
   text-align: center;
 
 }
+
+/*Nicole anfang*/
+.anleitung .square{
+  width: 160px;
+  align-items: center;
+  justify-items: center;
+  margin-left: 5rem;
+  border: 3px;
+  border-style: solid;
+  border-radius: 10%;
+}
+
+.anleitung {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 7;
+  grid-row-end: 7;
+  cursor: pointer;
+}
+
+.zurück {
+  grid-column-start: 5;
+  grid-column-end: 7;
+  grid-row-start: 7;
+  grid-row-end: 7;
+  cursor: pointer;
+}
+
+
+.square:hover {
+
+  color: #837625;
+
+}
+/*Nicole ende*/
+
 
 .ergebnis {
   grid-area: joker2;
@@ -545,6 +616,7 @@ h5 {
     grid-row-start:1;
     grid-row-end:2;
     text-align: center;
+    font-weight: bold;
 
   }
 
@@ -659,5 +731,34 @@ h5 {
     cursor: pointer;
 
   }
+
+  /*Nicole anfang*/
+.anleitung .square{
+  width: 160px;
+  align-items: center;
+  justify-items: center;
+  margin-left: 5rem;
+  border: 3px;
+  border-style: solid;
+  border-radius: 10%;
+}
+
+.anleitung {
+  grid-column-start: 4;
+  grid-column-end: 7;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  cursor: pointer;
+}
+
+.zurück {
+  grid-column-start: 6;
+  grid-column-end: 6;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  cursor: pointer;
+}
+/*Nicole ende*/
+
 
 }
