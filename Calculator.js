@@ -180,3 +180,15 @@ multizwei.addEventListener("click", clickmultizwei);
 multivier.addEventListener("click", clickmultivier);
 minusacht.addEventListener("click", clickminusacht);
 again.addEventListener("click", clickonceagain);
+
+
+let overlay = document.getElementById("overlay");
+
+document.getElementById("toggle").addEventListener("click", function() {
+  overlay.classList.add("show");
+
+});
+
+
+
+overlay.addEventListener("click", overlay);
